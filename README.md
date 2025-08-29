@@ -1,2 +1,2 @@
-# Barno-Suleymanov
-# Barno-Suleymanov
+# Barno-Suleymanova
+# Barno-Suleymanova
