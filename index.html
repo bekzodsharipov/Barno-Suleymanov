@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barno Suleymanova</title>
+  <title>Barno Suleymanova 2</title>
 
   <!-- Critical CSS inlined for faster rendering -->
   <style>
@@ -22,7 +22,7 @@
 
     .hero {
       background-color: #f2f2f2;
-      padding-bottom: 69px;
+      padding-bottom: 28px;
     }
 
     .hero__container {
@@ -46,12 +46,12 @@
     }
 
     .hero__top {
-      background-color: #dadada;
+      background-color: #FFFDF4;
       position: absolute;
       top: 0;
-      max-width: 320px;
+      max-width: 400px;
       width: 100%;
-      padding: 17px 25px;
+      padding: 20px 21px;
       border-bottom-left-radius: 24px;
       border-bottom-right-radius: 24px;
       display: flex;
@@ -95,10 +95,12 @@
       margin-bottom: 9px;
       text-wrap: wrap;
       max-width: 370px;
-      font-family: Big Shoulders Display, sans-serif;
+      font-family: "Big Shoulders Display", sans-serif;
       font-weight: 900;
       font-style: Black;
       font-size: 33px;
+      margin-left: auto;
+      margin-right: auto;
       line-height: 120%;
       letter-spacing: 0%;
       text-align: center;
@@ -110,17 +112,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 430px;
+      max-width: 345px;
       width: 100%;
-      background-color: #9b1121;
+      background-color: #53453F;
       border-radius: 30px;
       font-weight: 700;
-      font-size: 18px;
-      line-height: 23.25px;
+      font-size: 33px;
+      white-space: nowrap;
+      line-height: 100%;
       color: white;
       text-align: center;
-      padding: 37px 20px;
-      margin-bottom: 24px;
+      padding: 18px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
       border: none;
       cursor: pointer;
     }
@@ -134,7 +138,7 @@
     }
 
     .speakerImg {
-      max-width: 334px;
+      max-width: 293px;
       height: auto;
       object-fit: cover;
     }
@@ -209,7 +213,7 @@
 
   <!-- Preload critical resources -->
   <link rel="preload" href="../imagspeakeres/.avif" as="image" fetchpriority="high" />
-  <link rel="preload" href="../images/calendar.svg" as="image" />
+  <link rel="preload" href="../images/calendars.svg" as="image" />
 
   <!-- Non-critical CSS loaded asynchronously -->
   <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -217,7 +221,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </noscript>
 
- 
+
 </head>
 
 <body>
@@ -232,69 +236,43 @@
           </div>
         </div>
 
+        <p class="hero__text">Barno Suleymanovadan <b>BEPUL</b> masterklass</p>
         <h1 class="hero__title">
-          Qanday qilib semizlikdan <span>butun umrga qutulib</span>,qayta semirmaslik mumkin?
+          Qanday qilib semizlikdan butun umrga qutulib,<span>qayta semirmaslik mumkin?</span>
         </h1>
 
 
         <div class="hero__center">
-          <img width="334" height="418" class="speakerImg" src="./images/speaker.avif" alt="Barno Suleymanova" />
-          <div class="hero__right_info__box">
-            <h3 class="herp__right_infobox-title">Barno Suleymanova</h3>
-            <ul class="hero__right_list">
-              <li class="hero__right_list__item">
-                8-yillik tajribaga ega Shifokor, Dietolog
-              </li>
-              <li class="hero__right_list__item">
-                30.000 dan oshiq insonlarga sog’lom ozishda yordam berganman
-              </li>
-            </ul>
-          </div>
+          <img width="293" height="295" class="speakerImg" src="./images/speaker.avif" fetchpriority="high" alt="Barno Suleymanova" />
         </div>
 
         <div class="hero__left_bottom">
           <div class="hero__btn-box">
-            <button class="hero__registerBtn">BEPUL QATNASHISH >></button>
-            <p class="hero__btn_box-text">Bepul qatnashish uchun bosing</p>
-            <div id="timer" aria-live="polite">00:02:00</div>
+            <button class="hero__registerBtn">Vebinarga qatnashish</button>
           </div>
         </div>
+        <div class="nav-list">
+          <h3 class="nav-title">MASTERKLASDA siz:</h3>
+          <ul class="nav-item">
+            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
+            <li class="nav-links"><b>Semizlik keltirib chiqarayotgan</b> muammoning ildizini aniqlashni</li>
+          </ul>
+          <ul class="nav-item">
+            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
+            <li class="nav-link">Ortiqcha vaznni <b>stress</b> va <b>depressiyalarsiz</b> butun umrga yo’qotishni</li>
+          </ul>
+          <ul class="nav-item">
+            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
+            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, <b>qorindagi yog’lardan 10 barobar tez
+                xalos bo’lishni</b> o’rganasiz.</li>
+          </ul>
+        </div>
+        <button class="hero__registerBtn">Vebinarga qatnashish</button>
       </div>
     </div>
     </div>
   </section>
 
-  <div class="description">
-    <div class="description__container">
-      <h2 class="description__title"><b>Masterklasda</b> siz:</h2>
-      <div class="description__row">
-        <div class="description__col">
-          <h3 class="description__col-number">01</h3>
-          <p class="description__col-text">
-            <span>Semizlik keltirib chiqarayotgan</span>
-            muammoning ildizini aniqlashni
-          </p>
-        </div>
-        <div class="description__col">
-          <h3 class="description__col-number">02</h3>
-          <p class="description__col-text">
-            Ortiqcha vaznni stress va depressiyalarsiz butun umrga yo’qotishni
-          </p>
-        </div>
-        <div class="description__col">
-          <h3 class="description__col-number">03</h3>
-          <p class="description__col-text">
-            Mazali va to’yimli ovqatlanish, garmonlarni to’g’rilash, qorindagi yog’lardan 10 barobar tez xalos bo’lishni
-            o’rganasiz.
-          </p>
-        </div>
-      </div>
-      <div class="hero__btn-box desc__btn">
-        <button class="hero__registerBtn">BEPUL QATNASHISH >></button>
-        <p class="hero__btn_box-text">Bepul qatnashish uchun bosing</p>
-      </div>
-    </div>
-  </div>
 
   <!-- Registration Modal -->
   <div id="registrationModal" class="homeModal" style="display: none">
@@ -346,33 +324,7 @@
   </div>
 
 
-  <script>
-
-    let totalSeconds = 2 * 60; // 2 daqiqa
-
-    const timerElement = document.getElementById("timer");
-
-    const countdown = setInterval(() => {
-      if (totalSeconds <= 0) {
-        clearInterval(countdown);
-        return;
-      }
-
-      totalSeconds--;
-
-      let hours = Math.floor(totalSeconds / 3600);
-      let minutes = Math.floor((totalSeconds % 3600) / 60);
-      let seconds = totalSeconds % 60;
-
-      let h = hours.toString().padStart(2, "0");
-      let m = minutes.toString().padStart(2, "0");
-      let s = seconds.toString().padStart(2, "0");
-
-      timerElement.textContent = `${h}:${m}:${s}`;
-    }, 1000);
-  </script>
-
-  <script src="./js/app.js" defer></script>
+  <script src="./js/app.js" ></script>
 </body>
 
 </html>
