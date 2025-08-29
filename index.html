@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barno Suleymanova 2</title>
+  <title>Barno Suleymanova 3</title>
 
   <!-- Critical CSS inlined for faster rendering -->
   <style>
@@ -112,14 +112,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 345px;
+      gap: 4px;
+      max-width: 366px;
       width: 100%;
-      background-color: #53453F;
-      border-radius: 30px;
+      background-color: #003AFF;
+      border-radius: 50px;
       font-weight: 700;
-      font-size: 33px;
+      font-size: 25px;
       white-space: nowrap;
-      line-height: 100%;
+      line-height: 24px;
       color: white;
       text-align: center;
       padding: 18px;
@@ -212,8 +213,8 @@
   </style>
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="../imagspeakeres/.avif" as="image" fetchpriority="high" />
-  <link rel="preload" href="../images/calendars.svg" as="image" />
+  <link rel="preload" href="./images/speaker.avif" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/calendars.svg" as="image" />
 
   <!-- Non-critical CSS loaded asynchronously -->
   <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -229,18 +230,16 @@
     <div class="hero__container">
       <div class="hero__left">
         <div class="hero__top">
-          <img src="./images/calendar.svg" alt="Kalendar" class="calendar__img" width="32" height="33" />
           <div class="hero__top-card">
             <p class="hero__top-date">9-10-11 sentabr</p>
             <p class="hero__top-time">20:00</p>
           </div>
         </div>
 
-        <p class="hero__text">Barno Suleymanovadan <b>BEPUL</b> masterklass</p>
+        <p class="hero__text">Barno Suleymanovadan <span>BEPUL</span> masterklass</p>
         <h1 class="hero__title">
-          Qanday qilib semizlikdan butun umrga qutulib,<span>qayta semirmaslik mumkin?</span>
+          Qanday qilib semizlikdan <span>butun umrga qutulib</span>,qayta semirmaslik mumkin?
         </h1>
-
 
         <div class="hero__center">
           <img width="293" height="295" class="speakerImg" src="./images/speaker.avif" fetchpriority="high" alt="Barno Suleymanova" />
@@ -248,26 +247,30 @@
 
         <div class="hero__left_bottom">
           <div class="hero__btn-box">
-            <button class="hero__registerBtn">Vebinarga qatnashish</button>
+            <button class="hero__registerBtn">Bepul qatnashish
+              <img src="./images/arrow-left.svg" alt="arrow left">
+            </button>
           </div>
         </div>
         <div class="nav-list">
-          <h3 class="nav-title">MASTERKLASDA siz:</h3>
+          <h3 class="nav-title">MASTERKLASDA SIZ:</h3>
           <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
-            <li class="nav-links"><b>Semizlik keltirib chiqarayotgan</b> muammoning ildizini aniqlashni</li>
+            <img width="32" height="32" loading="lazy" src="./images/tick2.svg" alt="tick">
+            <li class="nav-link">Semizlik keltirib chiqarayotgan muammoning ildizini aniqlashni</li>
           </ul>
           <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
-            <li class="nav-link">Ortiqcha vaznni <b>stress</b> va <b>depressiyalarsiz</b> butun umrga yo’qotishni</li>
+            <img width="32" height="32" loading="lazy" src="./images/tick2.svg" alt="tick">
+            <li class="nav-link">Ortiqcha vaznni stress va depressiyalarsiz butun umrga yo’qotishni</li>
           </ul>
           <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
-            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, <b>qorindagi yog’lardan 10 barobar tez
-                xalos bo’lishni</b> o’rganasiz.</li>
+            <img width="32" height="32" loading="lazy" src="./images/tick2.svg" alt="tick">
+            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, qorindagi yog’lardan 10 barobar tez xalos
+              bo’lishni o’rganasiz.</li>
           </ul>
         </div>
-        <button class="hero__registerBtn">Vebinarga qatnashish</button>
+        <button class="hero__registerBtn">Bepul qatnashish
+          <img src="./images/arrow-left.svg" alt="arrow left">
+        </button>
       </div>
     </div>
     </div>
@@ -324,7 +327,7 @@
   </div>
 
 
-  <script src="./js/app.js" ></script>
+  <script defer src="./js/app.js"></script>
 </body>
 
 </html>
