@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barno Suleymanova 3</title>
+  <title>Barno Suleymanova 2</title>
 
   <!-- Critical CSS inlined for faster rendering -->
   <style>
@@ -21,7 +21,8 @@
     }
 
     .hero {
-      background-color: #f2f2f2;
+      background-color: #000000;
+      padding-top: 15px;
       padding-bottom: 28px;
     }
 
@@ -97,7 +98,6 @@
       max-width: 370px;
       font-family: "Big Shoulders Display", sans-serif;
       font-weight: 900;
-      font-style: Black;
       font-size: 33px;
       margin-left: auto;
       margin-right: auto;
@@ -112,15 +112,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 4px;
-      max-width: 366px;
+      max-width: 344px;
       width: 100%;
-      background-color: #003AFF;
-      border-radius: 50px;
+      background: linear-gradient(90deg, #FF5300 0%, #FF5300 50%, #FF5300 100%);
+      border-radius: 20px;
       font-weight: 700;
-      font-size: 25px;
+      font-size: 33px;
       white-space: nowrap;
-      line-height: 24px;
+      line-height: 100%;
+      box-shadow: 0px 3px 1.6px 0px #6C593E33;
+      box-shadow: 0px 1px 15.1px 0px #00000066 inset;
       color: white;
       text-align: center;
       padding: 18px;
@@ -139,7 +140,7 @@
     }
 
     .speakerImg {
-      max-width: 293px;
+      max-width: 308px;
       height: auto;
       object-fit: cover;
     }
@@ -213,8 +214,8 @@
   </style>
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="./images/speaker.avif" as="image" fetchpriority="high" />
-  <link rel="preload" href="./images/calendars.svg" as="image" />
+  <link rel="preload" href="../imagspeakeres/.avif" as="image" fetchpriority="high" />
+  <link rel="preload" href="../images/calendars.svg" as="image" />
 
   <!-- Non-critical CSS loaded asynchronously -->
   <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -229,48 +230,46 @@
   <section class="hero">
     <div class="hero__container">
       <div class="hero__left">
-        <div class="hero__top">
-          <div class="hero__top-card">
-            <p class="hero__top-date">9-10-11 sentabr</p>
-            <p class="hero__top-time">20:00</p>
-          </div>
+        <div class="hero__top-card">
+          <div class="hero-color"></div>
+          <p class="hero__top-date">9-10-11 sentabr | 20:00</p>
         </div>
 
-        <p class="hero__text">Barno Suleymanovadan <span>BEPUL</span> masterklass</p>
         <h1 class="hero__title">
-          Qanday qilib semizlikdan <span>butun umrga qutulib</span>,qayta semirmaslik mumkin?
+          Qanday qilib <span>semizlikdan butun umrga qutulib</span>,qayta semirmaslik mumkin?
         </h1>
 
+
+
         <div class="hero__center">
-          <img width="293" height="295" class="speakerImg" src="./images/speaker.avif" fetchpriority="high" alt="Barno Suleymanova" />
+          <img class="hero__shadow" src="./images/shaddow.avif" alt="">
+          <img width="308" height="400" class="speakerImg" src="./images/speaker.avif" fetchpriority="high"
+            alt="Barno Suleymanova" />
         </div>
 
         <div class="hero__left_bottom">
           <div class="hero__btn-box">
-            <button class="hero__registerBtn">Bepul qatnashish
-              <img src="./images/arrow-left.svg" alt="arrow left">
-            </button>
+            <button class="hero__registerBtn">Ro’yxatdan o’tish</button>
           </div>
         </div>
+        <div id="timer" class="timers">00:00:00</div>
         <div class="nav-list">
-          <h3 class="nav-title">MASTERKLASDA SIZ:</h3>
+          <h3 class="nav-title">3 kunlik bepul darsimda:</h3>
           <ul class="nav-item">
-            <img width="32" height="32" loading="lazy" src="./images/tick2.svg" alt="tick">
-            <li class="nav-link">Semizlik keltirib chiqarayotgan muammoning ildizini aniqlashni</li>
+            <img width="28" height="28" src="./images/tick.svg" loading="lazy" alt="tick">
+            <li class="nav-link">Semizlik keltirib chiqarayotgan <b>muammoning ildizini aniqlashni</b></li>
           </ul>
           <ul class="nav-item">
-            <img width="32" height="32" loading="lazy" src="./images/tick2.svg" alt="tick">
-            <li class="nav-link">Ortiqcha vaznni stress va depressiyalarsiz butun umrga yo’qotishni</li>
+            <img width="28" height="28" src="./images/tick.svg" loading="lazy" alt="tick">
+            <li class="nav-link">Ortiqcha vaznni <b>stress va depressiyalarsiz</b> butun umrga yo’qotishni</li>
           </ul>
           <ul class="nav-item">
-            <img width="32" height="32" loading="lazy" src="./images/tick2.svg" alt="tick">
-            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, qorindagi yog’lardan 10 barobar tez xalos
-              bo’lishni o’rganasiz.</li>
+            <img width="28" height="28" src="./images/tick.svg" loading="lazy" alt="tick">
+            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, <b>qorindagi yog’lardan 10 barobar tez
+                xalos bo’lishni</b> o’rganasiz.</li>
           </ul>
         </div>
-        <button class="hero__registerBtn">Bepul qatnashish
-          <img src="./images/arrow-left.svg" alt="arrow left">
-        </button>
+        <button class="hero__registerBtn">Ro’yxatdan o’tish</button>
       </div>
     </div>
     </div>
@@ -327,7 +326,35 @@
   </div>
 
 
-  <script defer src="./js/app.js"></script>
+
+  <script>
+    function updateTimer() {
+        const now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        document.getElementById("timer").innerHTML = `
+            <span class="digit">${hours.charAt(0)}</span>
+            <span class="digit">${hours.charAt(1)}</span>
+            <span class="colon">:</span>
+            <span class="digit">${minutes.charAt(0)}</span>
+            <span class="digit">${minutes.charAt(1)}</span>
+            <span class="colon">:</span>
+            <span class="digit">${seconds.charAt(0)}</span>
+            <span class="digit">${seconds.charAt(1)}</span>
+        `;
+    }
+
+    // Har sekundda yangilash
+    setInterval(updateTimer, 1000);
+    updateTimer();
+</script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
