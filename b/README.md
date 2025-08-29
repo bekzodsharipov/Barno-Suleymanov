@@ -1,3 +1,2 @@
 # Barno-Suleymanova
 # Barno-Suleymanova
-# Barno-SuleymanovaTwo
