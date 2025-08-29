@@ -380,3 +380,29 @@ document.addEventListener("DOMContentLoaded", function () {
     closeModal();
   });
 });
+
+
+let totalSeconds = 2 * 60; // 2 daqiqa = 120 sekund
+
+function updateDisplay() {
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+
+  document.getElementById('timer').textContent =
+    minutes.toString().padStart(2, '0') + ":" +
+    seconds.toString().padStart(2, '0');
+}
+
+function startTimer() {
+  const interval = setInterval(() => {
+    if (totalSeconds <= 0) {
+      clearInterval(interval);
+    } else {
+      totalSeconds--;
+      updateDisplay();
+    }
+  }, 1000);
+}
+
+updateDisplay();
+startTimer();

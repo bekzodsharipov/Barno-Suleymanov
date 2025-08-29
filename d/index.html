@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barno Suleymanova</title>
+  <title>Barno Suleymanova 3</title>
 
   <!-- Critical CSS inlined for faster rendering -->
   <style>
@@ -21,7 +21,8 @@
     }
 
     .hero {
-      background-color: #f2f2f2;
+      background-color: #171717;
+      padding-top: 28px;
       padding-bottom: 28px;
     }
 
@@ -97,7 +98,6 @@
       max-width: 370px;
       font-family: "Big Shoulders Display", sans-serif;
       font-weight: 900;
-      font-style: Black;
       font-size: 33px;
       margin-left: auto;
       margin-right: auto;
@@ -112,20 +112,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 345px;
+      gap: 4px;
+      max-width: 366px;
       width: 100%;
-      background-color: #53453F;
-      border-radius: 30px;
+      border-radius: 20px;
       font-weight: 700;
-      font-size: 33px;
+      font-size: 18px;
       white-space: nowrap;
-      line-height: 100%;
+      line-height: 27px;
       color: white;
       text-align: center;
       padding: 18px;
       margin-bottom: 25px;
       text-transform: uppercase;
       border: none;
+      background: linear-gradient(90deg, #BB0707 0%, #D50606 51%, #BB0707 100%);
+      box-shadow: 0px 5px 0px 0px #610606;
       cursor: pointer;
     }
 
@@ -138,7 +140,7 @@
     }
 
     .speakerImg {
-      max-width: 293px;
+      max-width: 251px;
       height: auto;
       object-fit: cover;
     }
@@ -212,8 +214,8 @@
   </style>
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="../imagspeakeres/.avif" as="image" fetchpriority="high" />
-  <link rel="preload" href="../images/calendars.svg" as="image" />
+  <link rel="preload" href="./images/speaker.avif" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/calendars.svg" as="image" />
 
   <!-- Non-critical CSS loaded asynchronously -->
   <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -228,46 +230,46 @@
   <section class="hero">
     <div class="hero__container">
       <div class="hero__left">
-        <div class="hero__top">
-          <img src="./images/calendar.svg" alt="Kalendar" class="calendar__img" width="32" height="33" />
-          <div class="hero__top-card">
-            <p class="hero__top-date">9-10-11 sentabr</p>
-            <p class="hero__top-time">20:00</p>
-          </div>
+        <div class="hero__top-card">
+          <div class="hero-color"></div>
+          <p class="hero__top-date">9-10-11 sentabr | 20:00</p>
         </div>
 
-        <p class="hero__text">Barno Suleymanovadan <b>BEPUL</b> masterklass</p>
         <h1 class="hero__title">
-          Qanday qilib semizlikdan butun umrga qutulib,<span>qayta semirmaslik mumkin?</span>
+          Qanday qilib <span>semizlikdan butun umrga qutulib</span>,qayta semirmaslik mumkin?
         </h1>
 
 
-        <div class="hero__center">
-          <img width="293" height="295" class="speakerImg" src="./images/speaker.avif" alt="Barno Suleymanova" />
+        <div class="hero__boxs">
+
+          <div class="nav-list">
+            <img src="./images/" alt="">
+            <h3 class="nav-title">Masterklassda siz:</h3>
+            <ul class="nav-item">
+              <li class="nav-link"><b>- Semizlik keltirib chiqarayotgan</b> muammoning ildizini aniqlashni</li>
+            </ul>
+            <ul class="nav-item">
+              <li class="nav-link">- Ortiqcha vaznni <b>stress va depressiyalarsiz</b> butun umrga yo’qotishni</li>
+            </ul>
+            <ul class="nav-item">
+              <li class="nav-link">- Mazali ovqatlanish, garmonlarni to’g’rilash, <b>qorindagi yog’lardan 10 barobar tez
+                xalos
+                bo’lishni</b> o’rganasiz.</li>
+            </ul>
+            <ul class="nav-items">
+              <h3 class="timer" id="timer">02:00</h3>
+            </ul>
+
+          </div>
+          <img width="251" height="415" class="speakerImg" src="./images/speaker.avif" alt="Barno Suleymanova" />
         </div>
 
-        <div class="hero__left_bottom">
-          <div class="hero__btn-box">
-            <button class="hero__registerBtn">Vebinarga qatnashish</button>
-          </div>
-        </div>
-        <div class="nav-list">
-          <h3 class="nav-title">MASTERKLASDA siz:</h3>
-          <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" alt="tick">
-            <li class="nav-links"><b>Semizlik keltirib chiqarayotgan</b> muammoning ildizini aniqlashni</li>
-          </ul>
-          <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" alt="tick">
-            <li class="nav-link">Ortiqcha vaznni <b>stress</b> va <b>depressiyalarsiz</b> butun umrga yo’qotishni</li>
-          </ul>
-          <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" alt="tick">
-            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, <b>qorindagi yog’lardan 10 barobar tez
-                xalos bo’lishni</b> o’rganasiz.</li>
-          </ul>
-        </div>
-        <button class="hero__registerBtn">Vebinarga qatnashish</button>
+
+
+        <button class="hero__registerBtn">>>> Bepul qatnashish <<<
+        </button>
+        <p class="hero__btn_box-text">Bepul qatnashish uchun bosing</p>
+
       </div>
     </div>
     </div>
@@ -324,7 +326,7 @@
   </div>
 
 
-  <script src="./js/app.js" ></script>
+  <script defer src="./js/app.js"></script>
 </body>
 
 </html>
