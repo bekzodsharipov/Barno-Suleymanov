@@ -26,7 +26,7 @@
 }
 
 .prompt-container {
-  background-color: #e8e8e8;
+  background-color: #171717;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -35,13 +35,11 @@
 }
 
 .prompt-box {
-  background-color: white;
   border-radius: 20px;
   padding: 30px 20px;
   max-width: 400px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -51,7 +49,10 @@
 
 .promeTitle {
   font-family: MontserratBold, sans-serif;
-  font-size: 35px;
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 15px;
 }
 .promeTitle > span {
@@ -59,10 +60,19 @@
 }
 
 .promtText {
-  font-family: MontserratMedium, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: white;
+  max-width: 278px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promtText>span {
+  color: #FF0000;
 }
 
 .subscribe-button {
@@ -76,18 +86,22 @@
   margin-right: auto;
   text-align: center;
   font-family: MontserratSemibold, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 1.5;
   text-transform: uppercase;
-  padding: 26px 63px;
+  padding: 23px ;
   height: 70px;
   align-items: center;
+  max-width: 308px;
   justify-content: center;
   border: none;
   border-radius: 78px;
   margin-bottom: 27px;
   text-decoration: none;
+  display: flex;
+  gap: 5px;
+  margin-top: 28px;
 }
 
 .subscribe-button:hover {

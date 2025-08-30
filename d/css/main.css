@@ -271,9 +271,11 @@
     display: block;
 }
 
-.speakerImg {
-    position: relative;
+.speakerImgs {
+    position: absolute;
     z-index: 10;
+    left: 145px;
+    top: -25px;
 }
 
 .hero__btn_box-text {
@@ -337,6 +339,9 @@
     line-height: 24px;
     letter-spacing: 0%;
     text-align: center;
+    margin-top: 25px;
+    position: relative;
+    z-index: 20;
     margin-left: auto;
     margin-right: auto;
 }
@@ -453,6 +458,8 @@
 .hero__boxs {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 20;
 }
 
 .nav-list {
@@ -465,7 +472,7 @@
     display: flex;
     align-items: center;
     text-align: start;
-    max-width: 327px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
     gap: 8px;
@@ -729,7 +736,7 @@ input[type="tel"] {
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 25px;
-    background-color: #9b1121;
+    background: linear-gradient(90deg, #BB0707 0%, #D50606 51%, #BB0707 100%);
 }
 
 .error-message,
