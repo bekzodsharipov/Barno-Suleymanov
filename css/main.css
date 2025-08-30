@@ -705,7 +705,7 @@ input[type="tel"] {
         font-size: 16px;
     }
     .form {
-        min-height: 665px;
+        height: 100vh;
     }
 
     .hero__top-time {
