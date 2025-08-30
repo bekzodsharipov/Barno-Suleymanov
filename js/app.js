@@ -380,4 +380,3 @@ document.addEventListener("DOMContentLoaded", function () {
     closeModal();
   });
 });
-

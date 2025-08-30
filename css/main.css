@@ -7,13 +7,6 @@
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
     font-family: Poppins;
     src: url(../fonts/Poppins-Bold.ttf) format("truetype");
     font-weight: 700;
@@ -125,7 +118,7 @@
     position: static;
     max-width: 320px;
     width: 100%;
-    padding: 17px 25px;
+    padding: 10px 20px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     display: flex;
@@ -146,10 +139,10 @@
 }
 
 .hero__top-date {
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 20px;
-    font-family: Montserrat, sans-serif;
+    line-height: 100%;
+    font-family: Poppins, sans-serif;
 }
 
 .hero__left {
@@ -157,30 +150,10 @@
     text-align: center;
 }
 
-.hero-color {
-    background-color: #3DE604;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
 .hero__top-card {
     display: flex;
     align-items: center;
-    gap: 60px;
-    border-radius: 50px;
-    position: relative;
-    z-index: 15;
-    width: 100%;
-    max-width: 207px;
-    border: 1px solid var(--color-white-solid, #FFFFFF);
-    color: white;
-    justify-content: center;
-    gap: 5px;
-    padding: 8px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
+    gap: 30px;
 }
 
 .hero__text {
@@ -189,13 +162,14 @@
     font-style: Regular;
     font-size: 14px;
     line-height: 130%;
+    color: #53453F;
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 8px;
 }
 
 .hero__text>b {
-    color: #53453F;
+    color: #53453F  ;
 }
 
 .hero__top-time {
@@ -210,24 +184,22 @@
 .hero__title {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 20px;
     text-wrap: wrap;
     max-width: 370px;
     font-family: 'Big Shoulders Display', sans-serif;
     font-weight: 800;
     font-size: 33px;
-    color: white;
+    color: #2C0815;
     line-height: 120%;
     letter-spacing: 0%;
-    position: relative;
-    z-index: 15;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
 }
 
 .hero__title>span {
-    color: #FE5300;
+    color: #53453F;
 }
 
 .hero__subtitle {
@@ -293,12 +265,6 @@
     color: #444444;
 }
 
-.hero__shadow {
-    position: absolute;
-    bottom: 0px;
-    z-index: 10;
-}
-
 .hero__center {
     margin-top: -15px;
     position: relative;
@@ -306,7 +272,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .hero__right_info__box {
@@ -343,23 +308,17 @@
 }
 
 .hero__registerBtn {
-    padding: 18px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-bottom: 12px;
-    max-width: 344px;
-    font-family: "Big Shoulders Display", sans-serif;
-    font-weight: 800;
-    font-style: ExtraBold;
-    font-size: 33px;
+    max-width: 345px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    background: linear-gradient(90deg, #FF5300 0%, #FF5300 50%, #FF5300 100%);
-    box-shadow: 0px 3px 1.6px 0px #6C593E33;
-    box-shadow: 0px 1px 15.1px 0px #00000066 inset;
     margin-left: auto;
-    margin-top: -55px;
     margin-right: auto;
 }
 
@@ -461,46 +420,15 @@
     width: 100%;
 }
 
-.timers {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
-    color: #fff;
-    background: #000;
-    padding: 20px;
-    display: inline-block;
-    letter-spacing: 5px;
-}
-.digit {
-    display: inline-block;
-    width: 40px;
-    text-align: center;
-    position: relative;
-}
-.colon {
-    margin: 0 5px;
-}
-
-.nav-list {
-    border: 1px solid #727272;
-    background-color: #262626;
-    border-radius: 30px;
-    padding: 15px 27px;
-    margin-bottom: 80px;
-    max-width: 344px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .nav-title {
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-style: SemiBold;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 100%;
-    color: white;
     letter-spacing: 0%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .nav-item {
@@ -533,20 +461,15 @@
     font-weight: 400;
     font-style: Regular;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 20px;
     letter-spacing: 0%;
-    color: white;
-}
-
-.nav-link>b {
-    color: #FF5300;
+    color: #2C0815;
 }
 
 .nav-link:nth-child(1) {
     max-width: 284px;
     width: 100%;
 }
-
 
 .description__container {
     padding-left: 20px;
@@ -754,7 +677,7 @@ input[type="tel"] {
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 25px;
-    background-color: #9b1121;
+    background-color: #53453F;
 }
 
 .error-message,
@@ -779,8 +702,10 @@ input[type="tel"] {
 
 @media (max-width:640px) {
     .hero__top-date {
-        font-size: 13px;
-        line-height: 17px;
+        font-size: 16px;
+    }
+    .form {
+        min-height: 665px;
     }
 
     .hero__top-time {
@@ -814,12 +739,5 @@ input[type="tel"] {
 
     .hero__right_info__box {
         padding: 10px 25px 25px 25px;
-    }
-    .nav-link {
-        line-height: 18px;
-        font-size: 11px;
-    }
-    .nav-title {
-        font-size: 16px;
     }
 }
