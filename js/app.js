@@ -380,3 +380,26 @@ document.addEventListener("DOMContentLoaded", function () {
     closeModal();
   });
 });
+
+let totalSeconds = 2 * 60; // 2 daqiqa
+
+const timerElement = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+  if (totalSeconds <= 0) {
+    clearInterval(countdown);
+    return;
+  }
+
+  totalSeconds--;
+
+  let hours = Math.floor(totalSeconds / 3600);
+  let minutes = Math.floor((totalSeconds % 3600) / 60);
+  let seconds = totalSeconds % 60;
+
+  let h = hours.toString().padStart(2, "0");
+  let m = minutes.toString().padStart(2, "0");
+  let s = seconds.toString().padStart(2, "0");
+
+  timerElement.textContent = `${h}:${m}:${s}`;
+}, 1000);

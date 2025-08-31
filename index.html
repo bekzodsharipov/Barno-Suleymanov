@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barno Suleymanova 2</title>
+  <title>Muxtasar Abdullayeva</title>
 
   <!-- Critical CSS inlined for faster rendering -->
   <style>
@@ -22,7 +22,7 @@
 
     .hero {
       background-color: #f2f2f2;
-      padding-bottom: 28px;
+      padding-bottom: 69px;
     }
 
     .hero__container {
@@ -46,14 +46,15 @@
     }
 
     .hero__top {
-      background-color: #FFFDF4;
+      background-color: #F8F8FF;
+      box-shadow: 0px 2px 5px 0px #00000014;
       position: absolute;
       top: 0;
-      max-width: 400px;
+      max-width: 360px;
       width: 100%;
-      padding: 20px 21px;
-      border-bottom-left-radius: 24px;
-      border-bottom-right-radius: 24px;
+      padding: 17px 25px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
       display: flex;
       align-items: center;
       gap: 5px;
@@ -93,15 +94,12 @@
       width: 100%;
       margin-top: 0;
       margin-bottom: 9px;
-      text-wrap: wrap;
-      max-width: 370px;
-      font-family: "Big Shoulders Display", sans-serif;
-      font-weight: 900;
+      max-width: 316px;
+      font-weight: 400;
       font-style: Black;
-      font-size: 33px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 120%;
+      font-size: 28px;
+      line-height: 110%;
+      text-wrap: wrap;
       letter-spacing: 0%;
       text-align: center;
       vertical-align: middle;
@@ -113,17 +111,10 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      background-color: #53453F;
-      border-radius: 30px;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 100%;
+      background-color: #6A34FF;
       color: white;
       text-align: center;
-      padding-top: 18px;
-      padding-bottom: 15px;
-      margin-bottom: 25px;
-      text-transform: uppercase;
+      margin-bottom: 24px;
       border: none;
       cursor: pointer;
     }
@@ -137,7 +128,7 @@
     }
 
     .speakerImg {
-      max-width: 293px;
+      max-width: 296px;
       height: auto;
       object-fit: cover;
     }
@@ -211,8 +202,8 @@
   </style>
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="../imagspeakeres/.avif" as="image" fetchpriority="high" />
-  <link rel="preload" href="../images/calendars.svg" as="image" />
+  <link rel="preload" href="./images/speaker.avif" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/calendar.svg" as="image" />
 
   <!-- Non-critical CSS loaded asynchronously -->
   <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -228,50 +219,50 @@
     <div class="hero__container">
       <div class="hero__left">
         <div class="hero__top">
-          <img src="./images/calendar.svg" alt="Kalendar" class="calendar__img" width="32" height="33" />
+          <img src="./images/calendar.svg" alt="Kalendar" class="calendar__img" loading="lazy" width="32" height="33" />
           <div class="hero__top-card">
-            <p class="hero__top-date">9-10-11 sentabr</p>
+            <p class="hero__top-date">9-sentabr</p>
             <p class="hero__top-time">20:00</p>
           </div>
         </div>
 
-        <p class="hero__text">Barno Suleymanovadan <b>BEPUL</b> masterklass</p>
         <h1 class="hero__title">
-          Qanday qilib semizlikdan butun umrga qutulib,<span>qayta semirmaslik mumkin?</span>
+          Maxsus kitob, aniq metodika va kuchli ustoz bilan <span>0 dan 2 oyda B1</span> darajaga chiqishni
+          xohlaysizmi? 
         </h1>
 
 
         <div class="hero__center">
-          <img width="293" height="295" class="speakerImg" src="./images/speaker.avif" fetchpriority="high"
-            alt="Barno Suleymanova" />
+          <img width="296" height="416" class="speakerImg" src="./images/speaker.avif" fetchpriority="high"
+            alt="Muxtasar Abdullayeva" />
         </div>
 
         <div class="hero__left_bottom">
           <div class="hero__btn-box">
-            <button class="hero__registerBtn">Vebinarga qatnashish</button>
+            <button class="hero__registerBtn">BEPUL QATNASHISH >></button>
           </div>
         </div>
-        <div class="nav-list">
-          <h3 class="nav-title">MASTERKLASDA siz:</h3>
-          <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
-            <li class="nav-links"><b>Semizlik keltirib chiqarayotgan</b> muammoning ildizini aniqlashni</li>
-          </ul>
-          <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
-            <li class="nav-link">Ortiqcha vaznni <b>stress</b> va <b>depressiyalarsiz</b> butun umrga yo’qotishni</li>
-          </ul>
-          <ul class="nav-item">
-            <img width="35" height="35" src="./images/tick.svg" loading="lazy" alt="tick">
-            <li class="nav-link">Mazali ovqatlanish, garmonlarni to’g’rilash, <b>qorindagi yog’lardan 10 barobar tez
-                xalos bo’lishni</b> o’rganasiz.</li>
-          </ul>
-        </div>
-        <button class="hero__registerBtn">Vebinarga qatnashish</button>
+
+        <ul class="nav-list">
+          <h3 class="nav-title">3 kunlik BEPUL darsda:</h3>
+          <li class="nav-item">
+            <img src="./images/tick.svg" alt="tick">
+            <p class="nav-link"><b>Zerikarli qoidalarsiz</b> noldan ingliz tilida gapirib ketish uchun <b>ishlaydigan 5 ta texnikani </b> va uni amalda qanday qo’llashni</p>
+          </li>
+          <li class="nav-item">
+            <img src="./images/tick.svg" alt="tick">
+            <p class="nav-link">Ingliz tili <b>grammatikasini qiyinlashtirmasdan prikollar bilan</b> miyangizga oson quyib qo’yadigan metodikani</p>
+          </li>
+          <li class="nav-item">
+            <img src="./images/tick.svg" alt="tick">
+            <p class="nav-link">So’zlarni aktiv yodlash va <b>speakingda ishlatish uchun 10 ta bonus</b> darsni qo’lga kiritasiz</p>
+          </li>
+        </ul>
       </div>
     </div>
     </div>
   </section>
+
 
 
   <!-- Registration Modal -->
@@ -279,10 +270,12 @@
     <div class="homeModalOverlay"></div>
     <div class="form">
       <button class="f-button" id="closeModalBtn">
-        <svg class="form-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="#FFFFFF">
+        <svg class="form-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12"
+          fill="#FFFFFF">
           <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
-        <svg class="form-svgs" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+        <svg class="form-svgs" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+          fill="#FFFFFF">
           <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
         </svg>
       </button>
@@ -327,7 +320,7 @@
   </div>
 
 
-  <script src="./js/app.js"></script>
+  <script defer src="./js/app.js"></script>
 </body>
 
 </html>
